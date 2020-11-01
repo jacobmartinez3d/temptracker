@@ -5,7 +5,7 @@ from temptracker import EncoreExtendedList
 
 class TestFlatten(unittest.TestCase):
     """Test functionality of custom methods.
-    
+
     TODO: include testing with generators for both python 2/3
     """
     _test_data = (

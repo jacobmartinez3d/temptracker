@@ -2,10 +2,10 @@
 
 class EncoreExtendedList(list):
     """Extend `list` base class with custom methods."""
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):  # pylint: disable=useless-super-delegation
         """Initialize base list."""
-        super(EncoreExtendedList, self).__init__(*args, **kwargs)
-    
+        super(EncoreExtendedList, self).__init__(*args, **kwargs)  # pylint: disable=super-with-arguments
+
     def flatten(self, target=None):
         """Return flattened version of given target list recursively.
 
