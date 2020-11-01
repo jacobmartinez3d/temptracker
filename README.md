@@ -1,4 +1,4 @@
-# TempTracker - an outline of a basic simple Python application deployment using `pip`.
+# TempTracker - an outline of a basic Python application deployment using `pip`.
 
 Record temperature readings as integers, and perform math operations on the collection of readings.
 
@@ -8,10 +8,10 @@ non-destructive nesting of readings.
 Some important features have been intentionally left as 'TODO' markers to demonstrate documentation
 style.
 
-
 ## Getting Started
 
-Clone or download this repository and navigate to its directory:
+#### Clone or download this repository and navigate to its directory:
+
 ```bash
 git clone https://github.com/jacobmartinez3d/temptracker.git
 cd temptracker
@@ -28,7 +28,7 @@ source venv/bin/activate
 Windows:
 ```cmd
 virtualenv venv
-venv\Scripts\activatee
+venv\Scripts\activate
 ```
 
 #### Install using `pip`:
