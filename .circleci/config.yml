@@ -1,0 +1,48 @@
+defaults: &defaults
+  steps:
+      - checkout
+      - run: pip install .
+      - run: python -m unittest discover tests
+
+version: 2.1
+jobs:
+  python_2-7:
+    working_directory: ~/temptracker
+    docker:
+      - image: circleci/python:2.7
+    <<: *defaults
+  python_3-5:
+    working_directory: ~/temptracker
+    docker:
+      - image: circleci/python:3.5
+    <<: *defaults
+  python_3-6:
+    working_directory: ~/temptracker
+    docker:
+      - image: circleci/python:3.6
+    <<: *defaults
+  python_3-7:
+    working_directory: ~/temptracker
+    docker:
+      - image: circleci/python:3.7
+    <<: *defaults
+  python_3-8:
+    working_directory: ~/temptracker
+    docker:
+      - image: circleci/python:3.8
+    <<: *defaults
+  python_3-9:
+    working_directory: ~/temptracker
+    docker:
+      - image: circleci/python:3.9
+    <<: *defaults
+workflows:
+  version: 2.1
+  test_python_versions:
+    jobs:
+      - python_2-7
+      - python_3-5
+      - python_3-6
+      - python_3-7
+      - python_3-8
+      - python_3-9
