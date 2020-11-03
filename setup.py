@@ -10,7 +10,7 @@ setuptools.setup(
     author_email="jacob@magnetic-lab.com",
     description="A test application for recording and performing math on temperature readings.",
     license="GNU General Public License v3 or later (GPLv3+)",
-    platforms=["POSIX", "Windows"],
+    platforms=["POSIX", "Windows", "MacOS X"],
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jacobmartinez3d/temptracker",
@@ -24,7 +24,8 @@ setuptools.setup(
             "Programming Language :: Python :: 3.8",
             "Programming Language :: Python :: 3.9",
             "Operating System :: Microsoft :: Windows",
-            "Operating System :: POSIX"
+            "Operating System :: POSIX",
+            "Operating System :: MacOS :: MacOS X"
     ],
     python_requires=">=2.7, <=3.9"
 )
